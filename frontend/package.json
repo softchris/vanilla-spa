@@ -1,0 +1,17 @@
+{
+  "name": "nitro-cats-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -p 5000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.4.2",
+    "jquery": "^3.4.1"
+  }
+}

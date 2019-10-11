@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="item"><a href="#/">Home</a></div>
+      <div class="item"><a href="#/products">Products</a></div>
+    </div>
+    <div class="app" id="app">
+
+    </div>
+    <script id="products-list" type="text/x-handlebars-template">
+      <div class="products">
+        {{#each products}}
+        <div class="product">
+          <div>
+            <img width="100%" src="{{url}}" />
+          </div>
+           <div class="header">
+             <strong>{{name}}</strong> <br />
+             <br />
+             <button onclick="buy({{id}})">Buy</button>
+           </div>
+        </div>
+        {{/each}}
+      </div>
+    </script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

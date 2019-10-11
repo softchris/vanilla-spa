@@ -1,0 +1,57 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.app {
+  margin: 20px;
+}
+
+.menu {
+  height: 30px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+
+.menu .item {
+  margin: 10px;
+}
+
+.menu .item a {
+  text-decoration: none;
+  padding: 20px 10px; 
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  box-shadow: 0 0 10px grey;
+  margin: 10px;
+  width: 200px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.product .header {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .product {
+    width: 100%;
+  }
+
+  .app {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
